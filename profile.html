@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>your profile </title>
+</head>
+
+<body>
+    <header class="p-8">
+        <h1 class="text-5xl font-semibold	 text-center mt-8 "> আমার ব্যাংক </h1>
+    </header>
+    <section class="mt-8 ">
+        <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
+            <div class="bg-green-400 p-8 rounded-md">
+                <h3 class="text-2xl font-medium">Deposite</h3>
+                <h4 class="text-4xl font-medium">$<span id="deposite-add">100</span></h4>
+            </div>
+            <div class="bg-yellow-400 p-8 rounded-md">
+                <h3 class="text-2xl font-medium"> Withdraw</h3>
+                <h4 class="text-4xl font-medium">$<span id="Withdraw-add">1220</span></h4>
+            </div>
+            <div class="bg-blue-400 p-8 rounded-md">
+                <h3 class="text-2xl font-medium"> Balance</h3>
+                <h4 class="text-4xl font-medium">$<span id="Balance-add">123130</span></h4>
+            </div>
+
+        </div>
+        <div class="  mx-10 p-3 mt-8 rounded-md ">
+
+            <div class=" mt-8 px-8 grid grid-cols-2 ">
+                <div class="mx-20 p-2 bg-green-400 rounded-md  ">
+                    <h3 class="text-2xl p-2 font-semibold text-white text-center">Please Deposite </h3>
+                    <input id="deposite-input" class=" p-2 px-5 mx-2 rounded-md mt-5 outline-neutral-200" type="text"
+                        placeholder="$ Enter Your Amount">
+                    <button id="deposite-button"
+                        class="bg-red-400 p-2 font-semibold text-white rounded-md mb-5 ">Deposite
+                        Now</button>
+                </div>
+                <div class="mx-20 p-2 bg-yellow-400 rounded-md  ">
+                    <h3 class="text-2xl text-white p-2 font-semibold text-center">Please Withdraw </h3>
+                    <input id="withdraw-input" class=" p-2 px-5 mx-2 rounded-md mt-5 outline-neutral-200" type="text"
+                        placeholder="$  Enter Your Amount">
+                    <button id="withdraw-button"
+                        class="bg-red-400 p-2 font-semibold text-white rounded-md mb-5 ">Withdraw
+                        Now</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <script src="money.js"></script>
+</body>
+
+</html>
